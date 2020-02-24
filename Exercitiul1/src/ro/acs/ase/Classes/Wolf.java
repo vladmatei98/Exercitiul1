@@ -2,10 +2,19 @@ package ro.acs.ase.Classes;
 
 public class Wolf implements Runner {
 
+	final int WOLF_SPEED = 100;
+	
+	public Wolf() {
+		
+	}
+	
 	@Override
 	public int getSpeed() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.WOLF_SPEED;
 	}
 
+	@Override
+	public String toString() {
+		return "" + WOLF_SPEED;
+	}
 }
